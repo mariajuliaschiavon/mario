@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Mario Game</title>
+</head>
+<body>
+
+    <div class="game-board">
+        <img src="img/clouds.png" class="clouds">
+        <img src="img/mario.gif" class="mario">
+        <img src="img/pipe.png" class="pipe">
+
+        <!-- Botão Reiniciar -->
+        <button class="restart-btn" onclick="reiniciarJogo()">
+            🔄 Reiniciar
+        </button>
+        <!-- Adicione o atributo 'loop' para a música reiniciar sozinha -->
+    </div>
+<!-- Dentro do <body>, antes do script -->
+<audio id="background-music" src="audio/theme.mp3" loop></audio>
+<audio id="dead-sound" src="audio/dead.mp3"></audio>
+</body>
+</html>
